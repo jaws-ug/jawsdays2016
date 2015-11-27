@@ -1,0 +1,1 @@
+/** * JAWSDAYS 2016 - v0.1.0 * * https://www.digitalcube.jp/ * * Copyright 2015, DigitalCube Co.,Ltd (https://www.digitalcube.jp/) * Released under the GNU General Public License v2 or later */(function($){})(jQuery);

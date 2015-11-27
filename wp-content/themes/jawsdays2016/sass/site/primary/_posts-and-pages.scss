@@ -1,0 +1,129 @@
+.page-header {
+	text-align: center;
+	margin-bottom: 20px;
+	@include mqPC {
+		margin-bottom: 40px;
+	}
+}
+.page-title {
+	margin: 0;
+	@include font-size(36);
+	@include mqPC {
+		@include font-size(42);
+	}
+}
+.taxonomy-description {
+	margin-top: 10px;
+	@include mqPC {
+		margin-top: 20px;
+	}
+	p {
+		margin: 0;
+	}
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin-bottom: 20px;
+	padding: 20px;
+	background: white;
+	border: 1px solid #dedede;
+	@include mqPC {
+		padding: 40px;
+	}
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.post-thumbnail {
+	text-align: center;
+	margin-bottom: 15px;
+	a, span {
+		display: inline-block;
+		padding: 4px;
+		border: 1px solid #dedede;
+		min-width: 158px;
+		img {
+			vertical-align: top;
+		}
+	}
+	@include mqPC {
+		float: left;
+		margin-right: 40px;
+		margin-bottom: 0;
+	}
+}
+.entry-header {
+	overflow: hidden;
+}
+
+.entry-title {
+	@include font-size(24);
+	margin: 0;
+	clear: none;
+	@include mqPC {
+		@include font-size(36);
+	}
+}
+.entry-meta {
+	@include font-size(12);
+	margin-top: 10px;
+	text-align: right;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+}
+.entry-content {
+	clear: both;
+	padding-top: 15px;
+}
+
+.entry-summary {
+	overflow: hidden;
+	margin-top: 15px;
+	p {
+		margin: 0;
+	}
+	
+	.entry-more {
+		margin-top: 1em;
+		@include font-size(14);
+		text-align: right;
+		a {
+			display: inline-block;
+			border-radius: 2px;
+			background: #231f20;
+			color: white;
+			padding: 0.25em 2em;
+			
+			&:hover, &:active, &:focus {
+				background: #ff9c08;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+// jetpack
+.entry-header {
+	.sharedaddy {
+		margin-top: 15px;
+	}
+	div.sharedaddy h3.sd-title {
+		display: none;
+	}
+}
+
