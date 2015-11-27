@@ -67,7 +67,7 @@ public function plugins_loaded() {
 	add_action( 'init', array( $this, 'custom_post_type_supporter' ), 0 );
 	// Query pre_get_posts
 	add_action( 'pre_get_posts', array( $this, 'jaws_modify_main_query' ) );
-	// Query pre_get_posts
+	// jaws_acf
 	add_action( 'init', array( $this, 'jaws_acf' ) );
 
 }
@@ -164,7 +164,7 @@ public function jaws_modify_main_query( $query ) {
 
 	if ( $query->is_post_type_archive( 'supporter' ) ) {
 		$query->set( 'posts_per_archive_page', -1 );
-		$query->set( 'order', 'ASC date' );
+		$query->set( 'order', 'ASC' );
 		$query->set( 'orderby', 'menu_order date' );
 		return;
 	}
@@ -212,7 +212,7 @@ public function jaws_acf() {
 			'menu_order' => 0,
 		));
 		
-		// supporter
+		// speaker
 		register_field_group(array (
 			'id' => 'acf_jaws_supporter',
 			'title' => 'サポーター',
@@ -257,6 +257,172 @@ public function jaws_acf() {
 				),
 			),
 			'menu_order' => 0,
+		));
+
+		// supporter
+		register_field_group(array (
+			'id' => 'acf_speaker1',
+			'title' => 'スピーカー1',
+			'fields' => array (
+				array (
+					'key' => 'field_56544249c76c8',
+					'label' => 'セッションタイトル',
+					'name' => 'session_title',
+					'type' => 'text',
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+				array (
+					'key' => 'field_5654427ac76c9',
+					'label' => 'トラック',
+					'name' => 'track',
+					'type' => 'text',
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+			),
+			'location' => array (
+				array (
+					array (
+						'param' => 'post_type',
+						'operator' => '==',
+						'value' => 'speaker',
+						'order_no' => 0,
+						'group_no' => 0,
+					),
+				),
+			),
+			'options' => array (
+				'position' => 'acf_after_title',
+				'layout' => 'no_box',
+				'hide_on_screen' => array (
+				),
+			),
+			'menu_order' => 0,
+		));
+		register_field_group(array (
+			'id' => 'acf_speaker2',
+			'title' => 'スピーカー2',
+			'fields' => array (
+				array (
+					'key' => 'field_5657d21e2d819',
+					'label' => '主な聴講者',
+					'name' => 'target',
+					'type' => 'textarea',
+					'default_value' => '',
+					'placeholder' => '',
+					'maxlength' => '',
+					'rows' => '',
+					'formatting' => 'br',
+				),
+				array (
+					'key' => 'field_5657d25d2d81a',
+					'label' => '所属',
+					'name' => 'group',
+					'type' => 'textarea',
+					'default_value' => '',
+					'placeholder' => '',
+					'maxlength' => '',
+					'rows' => '',
+					'formatting' => 'br',
+				),
+				array (
+					'key' => 'field_5657d2772d81b',
+					'label' => '自己紹介',
+					'name' => 'profile',
+					'type' => 'textarea',
+					'instructions' => '100文字以内',
+					'default_value' => '',
+					'placeholder' => '',
+					'maxlength' => 150,
+					'rows' => '',
+					'formatting' => 'br',
+				),
+				array (
+					'key' => 'field_5657d2ac2d81c',
+					'label' => 'Web',
+					'name' => 'web',
+					'type' => 'text',
+					'default_value' => '',
+					'placeholder' => 'http://',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+				array (
+					'key' => 'field_5657d2c42d81d',
+					'label' => 'Twitter',
+					'name' => 'twitter',
+					'type' => 'text',
+					'instructions' => '@以降のユーザー名のみ',
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+				array (
+					'key' => 'field_5657d2e52d81e',
+					'label' => 'Facebook',
+					'name' => 'facebook',
+					'type' => 'text',
+					'default_value' => '',
+					'placeholder' => 'https://www.facebook.com/ユーザー',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+				array (
+					'key' => 'field_5657d3352d81f',
+					'label' => 'スライド資料',
+					'name' => 'slide_url',
+					'type' => 'wysiwyg',
+					'instructions' => 'slideshare ならURLのみでスライドが展開されます',
+					'default_value' => '',
+					'toolbar' => 'full',
+					'media_upload' => 'yes',
+				),
+				array (
+					'key' => 'field_5657d3452d820',
+					'label' => 'その他',
+					'name' => 'other',
+					'type' => 'textarea',
+					'default_value' => '',
+					'placeholder' => '',
+					'maxlength' => '',
+					'rows' => '',
+					'formatting' => 'br',
+				),
+			),
+			'location' => array (
+				array (
+					array (
+						'param' => 'post_type',
+						'operator' => '==',
+						'value' => 'speaker',
+						'order_no' => 0,
+						'group_no' => 0,
+					),
+				),
+			),
+			'options' => array (
+				'position' => 'normal',
+				'layout' => 'no_box',
+				'hide_on_screen' => array (
+				),
+			),
+			'menu_order' => 1,
 		));
 
 	}
