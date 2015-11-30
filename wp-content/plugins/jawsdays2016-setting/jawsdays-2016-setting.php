@@ -230,14 +230,6 @@ public function jaws_acf() {
 					'formatting' => 'none',
 					'maxlength' => '',
 				),
-				array (
-					'key' => 'field_54939e86347ad',
-					'label' => 'ターゲット',
-					'name' => '_supporter_target',
-					'type' => 'true_false',
-					'message' => '',
-					'default_value' => 1,
-				),
 			),
 			'location' => array (
 				array (
@@ -259,7 +251,7 @@ public function jaws_acf() {
 			'menu_order' => 0,
 		));
 
-		// supporter
+		// speaker
 		register_field_group(array (
 			'id' => 'acf_speaker1',
 			'title' => 'スピーカー1',

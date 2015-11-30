@@ -11,6 +11,17 @@
 	}
 }
 
+// home.php
+body.home {
+	.site-content {
+		padding: 0;
+		background: #020610 image-url( 'background.png' ) repeat-x center bottom;
+	}
+	.main-image {
+		text-align: center;
+	}
+}
+
 .content-area {
 	@extend %inner;
 }

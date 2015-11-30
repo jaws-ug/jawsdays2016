@@ -44,8 +44,8 @@ function jawsdays_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'slide-thumb', 220, 100, true );
-	add_image_size( 'archive-thumb', 150, 150, true );
+	add_image_size( 'slide-thumb', 210, 90 );
+	add_image_size( 'archive-thumb', 150, 150 );
 
 	// Other
 	add_post_type_support( 'page', 'excerpt' );
@@ -150,13 +150,29 @@ function jawsdays_scripts() {
 	// Open Sans
 	wp_enqueue_style( 'open-sans' );
 
-	// Font Awesome
-	// https://fortawesome.github.io/Font-Awesome/
+	/**
+	 * Font Awesome
+	 *
+	 * @link https://fortawesome.github.io/Font-Awesome/
+	 */
 	wp_enqueue_style(
 		'font-awesome',
 		'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css',
 		array(),
 		'4.5.0'
+	);
+
+	/**
+	 * jquery.bxslider ver 4.1.2
+	 *
+	 * @link http://bxslider.com/
+	 */
+	wp_enqueue_script(
+		'bxslider',
+		get_template_directory_uri() . '/jquery.bxslider/jquery.bxslider.min.js',
+		array(),
+		'4.1.2',
+		true
 	);
 
 	wp_enqueue_style(
@@ -220,3 +236,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Supporter slide file.
+ */
+require get_template_directory() . '/inc/slide.php';

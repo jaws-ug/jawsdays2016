@@ -14,10 +14,8 @@
 		<?php do_action( 'jawsdays_after_content' ); ?>
 	</div><!-- #content -->
 
-	<section class="jawsdays-supporter" class="footer-section jawsdays-supporter">
-		すらいどやで
-		<?php //jawsdays2015_slide(); ?>
-	</section>
+	<?php // Supporter slide ?>
+	<?php supporter_slide(); ?>
 
 	<?php if ( is_front_page() ) : ?>
 		<?php if ( is_active_sidebar( 'footer-widgets-area' ) ) : ?>
@@ -27,7 +25,7 @@
 		<?php endif; ?>
 	<?php endif; ?>
 
-	<section class="jawsdays-contact-box" class="footer-section jawsdays-contact-box"><div class="inner">
+	<section id="jawsdays-contact-box" class="footer-section jawsdays-contact-box"><div class="inner">
 		<p class="contact-text"><?php esc_html_e( 'JAWS DAYS 2015 に参加する', 'jawsdays' ); ?></p>
 		<p class="contact-button"><a href="<?php echo home_url('/tickets'); ?>"><?php esc_html_e( 'Tickets', 'jawsdays' ); ?></a></p>
 	</div></section>
