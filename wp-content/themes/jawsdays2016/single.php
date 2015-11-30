@@ -40,5 +40,4 @@ get_header(); ?>
 		<?php do_action( 'jawsdays_after_primary' ); ?>
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

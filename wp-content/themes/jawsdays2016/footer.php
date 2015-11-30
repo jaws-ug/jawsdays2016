@@ -21,12 +21,18 @@
 		<?php if ( is_active_sidebar( 'footer-widgets-area' ) ) : ?>
 		<section id="footer-widgets-area" class="footer-section footer-widgets-area">
 			<?php dynamic_sidebar( 'footer-widgets-area' ); ?>
-		</section><!-- #jawsdays2015-new-post-box -->
+		</section><!-- #footer-widgets-area -->
 		<?php endif; ?>
 	<?php endif; ?>
 
 	<section id="jawsdays-contact-box" class="footer-section jawsdays-contact-box"><div class="inner">
-		<p class="contact-text"><?php esc_html_e( 'JAWS DAYS 2015 に参加する', 'jawsdays' ); ?></p>
+		<p class="contact-text"><?php
+			echo sprintf(
+				/* translators: %s: Name of current year */
+				esc_html__( 'To participate in the JAWS DAYS %d', 'jawsdays' ),
+				2016
+			);
+		?></p>
 		<p class="contact-button"><a href="<?php echo home_url('/tickets'); ?>"><?php esc_html_e( 'Tickets', 'jawsdays' ); ?></a></p>
 	</div></section>
 

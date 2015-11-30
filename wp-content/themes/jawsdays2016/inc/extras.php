@@ -27,3 +27,19 @@ function jawsdays_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'jawsdays_body_classes' );
+
+/**
+ * Filter the archive title..
+ *
+ * @param string $title Archive title to be displayed.
+ * @return string
+ */
+function jawsdays_get_the_archive_title( $title ) {
+	if ( is_category() ) {
+		$title = single_cat_title( '', false );
+	} elseif ( is_post_type_archive() ) {
+		$title = post_type_archive_title( '', false );
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'jawsdays_get_the_archive_title' );

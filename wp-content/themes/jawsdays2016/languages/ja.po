@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JAWSDAYS 2016 1.0.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2015-11-17 02:21:51+00:00\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/jawsdays2016\n"
+"POT-Creation-Date: 2015-11-30 08:30:46+00:00\n"
 "Last-Translator: Kazue Igarashi <gatesapce.k@gmail.com>\n"
 "Language-Team: \n"
 "Language: JAPANESE\n"
@@ -33,52 +33,65 @@ msgstr "よく使われているカテゴリー"
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "月別アーカイブを見てみてください。%1$s"
 
-#: comments.php:31
+#: archive.php:42 index.php:47 search.php:39
+msgid "&lt;"
+msgstr ""
+
+#: archive.php:43 index.php:48 search.php:40
+msgid "&gt;"
+msgstr ""
+
+#: comments.php:32
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "「%2$s」への%1$s件のフィードバック"
 msgstr[1] "「%2$s」への%1$s件のフィードバック"
 
-#: comments.php:40 comments.php:61
+#: comments.php:41 comments.php:62
 msgid "Comment navigation"
 msgstr "コメントナビゲーション"
 
-#: comments.php:43 comments.php:64
+#: comments.php:44 comments.php:65
 msgid "Older Comments"
 msgstr "以前のコメント"
 
-#: comments.php:44 comments.php:65
+#: comments.php:45 comments.php:66
 msgid "Newer Comments"
 msgstr "新しいコメント"
 
-#: comments.php:77
+#: comments.php:78
 msgid "Comments are closed."
 msgstr "コメントは受け付けていません。"
 
-#: footer.php:18
-msgid "https://wordpress.org/"
+#. translators: %s: Name of current year
+#: footer.php:32
+msgid "To participate in the JAWS DAYS %d"
+msgstr "JAWS DAYS %d に参加する"
+
+#: footer.php:36
+msgid "Tickets"
 msgstr ""
 
-#: footer.php:18
-msgid "Proudly powered by %s"
-msgstr "Proudly powered by %s"
-
-#: footer.php:20
-msgid "Theme: %1$s by %2$s."
-msgstr "テーマ: %1$s by %2$s."
-
-#: functions.php:47 header.php:42
-msgid "Primary Menu"
+#: functions.php:55
+msgid "Main Menu"
 msgstr "メインメニュー"
 
-#: functions.php:102
-msgid "Sidebar"
-msgstr "サイドバー"
+#: functions.php:56
+msgid "Footer Menu"
+msgstr "フッターメニュー"
 
-#: header.php:25
+#: functions.php:111
+msgid "Footer Widget Area"
+msgstr "フッターウィジェットエリア"
+
+#: header.php:26
 msgid "Skip to content"
 msgstr "コンテンツへスキップ"
+
+#: header.php:41
+msgid "Primary Menu"
+msgstr "メインメニュー"
 
 #: inc/template-tags.php:28
 msgctxt "post date"
@@ -116,26 +129,26 @@ msgid "% Comments"
 msgstr "%件のコメント"
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:71 template-parts/content-page.php:32
+#: inc/template-tags.php:71 template-parts/content-page.php:41
 msgid "Edit %s"
 msgstr "%sを編集"
 
-#: search.php:18
+#: search.php:19
 msgid "Search Results for: %s"
 msgstr "検索結果: %s"
 
-#: template-parts/content-none.php:14
+#: template-parts/content-none.php:15
 msgid "Nothing Found"
 msgstr "何も見つかりませんでした"
 
-#: template-parts/content-none.php:20
+#: template-parts/content-none.php:23
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 "最初の投稿を公開する準備ができましたか ?<a href=\"%1$s\">こちらからスタートし"
 "ましょう</a>。"
 
-#: template-parts/content-none.php:24
+#: template-parts/content-none.php:27
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -143,47 +156,61 @@ msgstr ""
 "検索キーワードに一致するコンテンツが見つかりませんでした。他のキーワードをお"
 "試しください。"
 
-#: template-parts/content-none.php:29
+#: template-parts/content-none.php:32
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr "お探しのコンテンツが見つかりません。検索をお試しください。"
 
-#: template-parts/content-page.php:21 template-parts/content-single.php:25
-#: template-parts/content.php:34
+#: template-parts/content-page.php:29 template-parts/content-single.php:41
+#: template-parts/content-speaker.php:116
+#: template-parts/content-supporter.php:38
 msgid "Pages:"
 msgstr "ページ:"
 
-#. translators: %s: Name of current post.
-#: template-parts/content.php:27
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "続きを読む %s <span class=\"meta-nav\">&rarr;</span>"
+#: template-parts/content-speaker.php:30
+msgid "Affiliation:"
+msgstr "所属: "
 
-#. Theme Name of the plugin/theme
-msgid "_s"
+#: template-parts/content-speaker.php:37
+msgid "Profile:"
+msgstr "自己紹介: "
+
+#: template-parts/content-speaker.php:85
+msgid "Track:"
+msgstr "トラック: "
+
+#: template-parts/content-speaker.php:95
+msgid "Target"
+msgstr "主な聴講者"
+
+#: template-parts/content-speaker.php:103
+msgid "Materials"
+msgstr "資料"
+
+#: template-parts/content-speaker.php:109
+msgid "Other"
+msgstr "その他"
+
+#: template-parts/content.php:36
+msgid "Read more &raquo;"
 msgstr ""
 
+#. Theme Name of the plugin/theme
+msgid "JAWSDAYS 2016"
+msgstr ""
+
+#. #-#-#-#-#  jawsdays.pot (JAWSDAYS 2016 0.1.0)  #-#-#-#-#
 #. Theme URI of the plugin/theme
-msgid "http://underscores.me/"
+#. #-#-#-#-#  jawsdays.pot (JAWSDAYS 2016 0.1.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://www.digitalcube.jp/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid ""
-"Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if "
-"you like. I'm a theme meant for hacking so don't use me as a <em>Parent "
-"Theme</em>. Instead try turning me into the next, most awesome, WordPress "
-"theme out there. That's what I'm here for."
+msgid "JAWS DAYS 2016 theme."
 msgstr ""
-"<code>_s</code>（アンダースコアーズ）というスターター・テーマです。親テーマ用"
-"ではなく、改変のベースとなるテーマとして作られています。これをもとに変更を加"
-"えて、次世代のすばらしい WordPress テーマを作るためのコードの参考にしてくださ"
-"い。"
 
 #. Author of the plugin/theme
-msgid "Automattic"
+msgid "DigitalCube Co.,Ltd"
 msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "http://automattic.com/"
-msgstr ""
-
