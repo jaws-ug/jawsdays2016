@@ -83,6 +83,21 @@
 	margin-top: 10px;
 	text-align: right;
 }
+.entry-profile {
+	margin-top: 10px;
+	@include font-size(14);
+	p {
+		margin: 0;
+	}
+}
+.entry-sns {
+	margin-top: 10px;
+	@include font-size(24);
+	a {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
 
 .page-content,
 .entry-content,

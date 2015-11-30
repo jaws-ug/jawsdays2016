@@ -16,15 +16,12 @@
 	<?php else : ?>
 		<img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="no-image" width="148" height="148" />
 	<?php endif; ?>
-	</span></div>
+	</a></div>
 
 	<header class="entry-header">
 		<?php do_action( 'jawsdays_before_entry_header' ); ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php jawsdays_posted_on(); ?>
-		</div><!-- .entry-meta -->
 		<?php
 			if ( function_exists( 'sharing_display' ) ) {
 				sharing_display( '', true );

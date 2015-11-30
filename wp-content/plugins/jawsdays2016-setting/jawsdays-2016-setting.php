@@ -212,7 +212,7 @@ public function jaws_acf() {
 			'menu_order' => 0,
 		));
 		
-		// speaker
+		// supporter
 		register_field_group(array (
 			'id' => 'acf_jaws_supporter',
 			'title' => 'サポーター',

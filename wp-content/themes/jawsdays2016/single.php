@@ -18,6 +18,8 @@ get_header(); ?>
 			<?php
 				if ( is_singular( 'supporter' ) ) {
 					get_template_part( 'template-parts/content', 'supporter' );
+				} elseif ( is_singular( 'speaker' ) ) {
+					get_template_part( 'template-parts/content', 'speaker' );
 				} else {
 					get_template_part( 'template-parts/content', 'single' );
 				}
