@@ -1141,20 +1141,44 @@ a:hover, a:active {
 .site-info {
   text-align: center;
   margin-top: 20px;
-  font-size: 11px;
-  font-size: 0.6875rem;
 }
 @media screen and (min-width: 601px) {
   /* line 70, ../sass/site/_footer.scss */
   .site-info {
     margin-top: 40px;
+  }
+}
+
+/* line 77, ../sass/site/_footer.scss */
+.social-button {
+  font-size: 36px;
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+}
+/* line 80, ../sass/site/_footer.scss */
+.social-button ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 85, ../sass/site/_footer.scss */
+.social-button li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* line 90, ../sass/site/_footer.scss */
+p.copyright {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  margin: 0;
+}
+@media screen and (min-width: 601px) {
+  /* line 90, ../sass/site/_footer.scss */
+  p.copyright {
     font-size: 14px;
     font-size: 0.875rem;
   }
-}
-/* line 78, ../sass/site/_footer.scss */
-.site-info p {
-  margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1324,10 +1348,21 @@ a:hover, a:active {
 /* line 122, ../sass/site/primary/_posts-and-pages.scss */
 .entry-header .sharedaddy {
   margin-top: 15px;
+  *zoom: 1;
 }
-/* line 125, ../sass/site/primary/_posts-and-pages.scss */
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.entry-header .sharedaddy:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 126, ../sass/site/primary/_posts-and-pages.scss */
 .entry-header div.sharedaddy h3.sd-title {
   display: none;
+}
+/* line 129, ../sass/site/primary/_posts-and-pages.scss */
+.entry-header .sd-content {
+  float: right;
 }
 
 /* line 1, ../sass/site/primary/_entry-content.scss */

@@ -70,12 +70,27 @@
 .site-info {
 	text-align: center;
 	margin-top: 20px;
-	@include font-size(11);
 	@include mqPC {
 		margin-top: 40px;
-		@include font-size(14);
 	}
-	p {
+}
+.social-button {
+	@include font-size(36);
+	margin-bottom: 10px;
+	ul {
+		list-style-type: none;
 		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+}
+p.copyright {
+	@include font-size(11);
+	margin: 0;
+	@include mqPC {
+		@include font-size(14);
 	}
 }

@@ -121,9 +121,13 @@
 .entry-header {
 	.sharedaddy {
 		margin-top: 15px;
+		@include pie-clearfix;
 	}
 	div.sharedaddy h3.sd-title {
 		display: none;
+	}
+	.sd-content {
+		float: right;
 	}
 }
 

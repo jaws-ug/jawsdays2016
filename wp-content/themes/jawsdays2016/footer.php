@@ -38,8 +38,14 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'footer_menu' ) ); ?>
 		</nav>
 		<div class="site-info">
-			<p>Copyright &copy; AWS User Group Japan. All rights reserved.</p>
-			<?php //jawsdays2015_social_button(); ?>
+			<div class="social-button">
+				<ul>
+					<li><a href="https://twitter.com/share?url=<?php echo rawurlencode( home_url( '/' ) ); ?>&hashtags=jawsdays&via=jawsdays" target="_blank">
+<i class="fa fa-twitter-square"></i></a></li>
+					<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo rawurlencode( home_url( '/' ) ); ?>" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+				</ul>
+			</div>
+			<p class="copyright">Copyright &copy; AWS User Group Japan. All rights reserved.</p>
 		</div><!-- .site-info -->
 		<?php do_action( 'jawsdays_after_footer' ); ?>
 	</div></footer><!-- #colophon -->

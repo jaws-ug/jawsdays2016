@@ -988,18 +988,38 @@ a:hover, a:active {
 .site-info {
   text-align: center;
   margin-top: 20px;
-  font-size: 11px;
-  font-size: 0.6875rem;
 }
 @media screen and (min-width: 601px) {
   .site-info {
     margin-top: 40px;
+  }
+}
+
+.social-button {
+  font-size: 36px;
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+}
+.social-button ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.social-button li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+p.copyright {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  margin: 0;
+}
+@media screen and (min-width: 601px) {
+  p.copyright {
     font-size: 14px;
     font-size: 0.875rem;
   }
-}
-.site-info p {
-  margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1142,9 +1162,18 @@ a:hover, a:active {
 
 .entry-header .sharedaddy {
   margin-top: 15px;
+  *zoom: 1;
+}
+.entry-header .sharedaddy:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .entry-header div.sharedaddy h3.sd-title {
   display: none;
+}
+.entry-header .sd-content {
+  float: right;
 }
 
 .page-content,
