@@ -43,7 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 /* line 26, ../sass/mixins/_mixins-master.scss */
-.inner, .content-area, .site-header {
+.footer-widgets-area, .inner, .content-area, .site-header {
   max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -51,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @media screen and (min-width: 601px) {
   /* line 32, ../sass/mixins/_mixins-master.scss */
-  .inner, .content-area, .site-header {
+  .footer-widgets-area, .inner, .content-area, .site-header {
     max-width: 1060px;
     padding: 0 30px;
   }
@@ -939,12 +939,76 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 /* line 1, ../sass/site/secondary/_widgets.scss */
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 20px 0;
   /* Make sure select elements fit in widgets. */
 }
 /* line 5, ../sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
+}
+
+/* line 9, ../sass/site/secondary/_widgets.scss */
+.widget-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  background: #231f20;
+  color: white;
+  border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+}
+/* line 18, ../sass/site/secondary/_widgets.scss */
+.widget-title a {
+  color: white;
+}
+/* line 22, ../sass/site/secondary/_widgets.scss */
+.widget_twitter_timeline .widget-title {
+  background: #55acee;
+}
+/* line 25, ../sass/site/secondary/_widgets.scss */
+.widget_facebook_likebox .widget-title {
+  background: #3b5999;
+}
+
+/* line 32, ../sass/site/secondary/_widgets.scss */
+.widget_recent_entries ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 37, ../sass/site/secondary/_widgets.scss */
+.widget_recent_entries li {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: dotted 1px #ccc;
+}
+/* line 42, ../sass/site/secondary/_widgets.scss */
+.widget_recent_entries a {
+  display: block;
+  font-weight: bold;
+}
+/* line 46, ../sass/site/secondary/_widgets.scss */
+.widget_recent_entries .post-date {
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: block;
+  color: #666;
+}
+
+@media screen and (min-width: 601px) {
+  /* line 56, ../sass/site/secondary/_widgets.scss */
+  .footer-widgets-area .widget {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 61, ../sass/site/secondary/_widgets.scss */
+  .footer-widgets-area .widget:nth-child(2) {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
 
 /*--------------------------------------------------------------

@@ -42,14 +42,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-.inner, .content-area, .site-header {
+.footer-widgets-area, .inner, .content-area, .site-header {
   max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 601px) {
-  .inner, .content-area, .site-header {
+  .footer-widgets-area, .inner, .content-area, .site-header {
     max-width: 1060px;
     padding: 0 30px;
   }
@@ -815,11 +815,65 @@ a:hover, a:active {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 20px 0;
   /* Make sure select elements fit in widgets. */
 }
 .widget select {
   max-width: 100%;
+}
+
+.widget-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  background: #231f20;
+  color: white;
+  border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+}
+.widget-title a {
+  color: white;
+}
+.widget_twitter_timeline .widget-title {
+  background: #55acee;
+}
+.widget_facebook_likebox .widget-title {
+  background: #3b5999;
+}
+
+.widget_recent_entries ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.widget_recent_entries li {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: dotted 1px #ccc;
+}
+.widget_recent_entries a {
+  display: block;
+  font-weight: bold;
+}
+.widget_recent_entries .post-date {
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: block;
+  color: #666;
+}
+
+@media screen and (min-width: 601px) {
+  .footer-widgets-area .widget {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .footer-widgets-area .widget:nth-child(2) {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
 
 /*--------------------------------------------------------------
