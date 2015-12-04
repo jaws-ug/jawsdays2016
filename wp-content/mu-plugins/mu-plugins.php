@@ -11,23 +11,17 @@ License: GPLv2 or later
 
 //アップグレード通知の無効化
 //Thanks to http://www.warna.info/archives/781/
-/*
 remove_action( 'wp_version_check', 'wp_version_check' );
 remove_action( 'admin_init', '_maybe_update_core' );
 add_filter( 'pre_site_transient_update_core', '__return_zero' );
-*/
 
 //管理画面からのテーマファイル、プラグインファイルの編集停止
-/*
 if ( ! defined( 'DISALLOW_FILE_EDIT' ) )
   define( 'DISALLOW_FILE_EDIT', true );
-*/
 
 //管理画面からの一切のアップグレード(自動アップグレードを含む)を禁止
-/*
 if ( ! defined( 'DISALLOW_FILE_MODS' ) )
   define( 'DISALLOW_FILE_MODS', true );
-*/
 
 //リビジョンを10個に制限
 if ( ! defined( 'WP_POST_REVISIONS' ) )
