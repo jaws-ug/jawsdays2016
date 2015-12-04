@@ -33,7 +33,7 @@
 				2016
 			);
 		?></p>
-		<p class="contact-button"><a href="<?php echo home_url('/tickets'); ?>"><?php esc_html_e( 'Tickets', 'jawsdays' ); ?></a></p>
+		<p class="contact-button"><a href="<?php echo home_url('/ticket'); ?>"><?php esc_html_e( 'Tickets', 'jawsdays' ); ?></a></p>
 	</div></section>
 
 	<footer id="colophon" class="site-footer" role="contentinfo"><div class="inner">
@@ -44,7 +44,7 @@
 		<div class="site-info">
 			<div class="social-button">
 				<ul>
-					<li><a href="https://twitter.com/share?url=<?php echo rawurlencode( home_url( '/' ) ); ?>&hashtags=jawsdays&via=jawsdays" target="_blank">
+					<li><a href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode( get_bloginfo( 'name' ) ); ?>&url=<?php echo rawurlencode( home_url( '/' ) ); ?>&hashtags=jawsdays, jawsug&via=jawsdays" target="_blank">
 <i class="fa fa-twitter-square"></i></a></li>
 					<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo rawurlencode( home_url( '/' ) ); ?>" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
 				</ul>
