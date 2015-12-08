@@ -175,6 +175,25 @@ function jawsdays_scripts() {
 		true
 	);
 
+	/**
+	 * FooTable
+	 *
+	 * @link http://fooplugins.github.io/FooTable/
+	 */
+	wp_enqueue_script(
+		'FooTable',
+		get_template_directory_uri() . '/footable/js/footable.js',
+		array(),
+		'2.0.3',
+		true
+	);
+	wp_enqueue_style(
+		'FooTable',
+		get_template_directory_uri() . '/footable/css/footable.core.min.css',
+		array(),
+		'2.0.3'
+	);
+
 	wp_enqueue_style(
 		'jawsdays-style',
 		$jawsdays_stylesheet,

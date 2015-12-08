@@ -1339,6 +1339,24 @@ p.copyright {
 .mceContentBody {
   word-wrap: break-word;
 }
+.page-content a,
+.entry-content a,
+.entry-summary a,
+.mceContentBody a {
+  color: #336699;
+}
+.page-content a:hover, .page-content a:focus, .page-content a:active,
+.entry-content a:hover,
+.entry-content a:focus,
+.entry-content a:active,
+.entry-summary a:hover,
+.entry-summary a:focus,
+.entry-summary a:active,
+.mceContentBody a:hover,
+.mceContentBody a:focus,
+.mceContentBody a:active {
+  color: #ff9c08;
+}
 .page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content p,
 .entry-content h1,
 .entry-content h2,
@@ -1408,6 +1426,74 @@ p.copyright {
 .entry-summary table th,
 .mceContentBody table th {
   background: #eeeeee;
+}
+.page-content table.timetable,
+.entry-content table.timetable,
+.entry-summary table.timetable,
+.mceContentBody table.timetable {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.page-content table.timetable thead th,
+.entry-content table.timetable thead th,
+.entry-summary table.timetable thead th,
+.mceContentBody table.timetable thead th {
+  background: #424346;
+  color: white;
+}
+.page-content table.timetable thead th a,
+.entry-content table.timetable thead th a,
+.entry-summary table.timetable thead th a,
+.mceContentBody table.timetable thead th a {
+  color: #ff9c08;
+  text-decoration: underline;
+}
+.page-content table.timetable td a,
+.entry-content table.timetable td a,
+.entry-summary table.timetable td a,
+.mceContentBody table.timetable td a {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.page-content .footable.breakpoint > tbody > tr > td > span.footable-toggle,
+.page-content .footable.breakpoint > tbody > tr > th > span.footable-toggle,
+.entry-content .footable.breakpoint > tbody > tr > td > span.footable-toggle,
+.entry-content .footable.breakpoint > tbody > tr > th > span.footable-toggle,
+.entry-summary .footable.breakpoint > tbody > tr > td > span.footable-toggle,
+.entry-summary .footable.breakpoint > tbody > tr > th > span.footable-toggle,
+.mceContentBody .footable.breakpoint > tbody > tr > td > span.footable-toggle,
+.mceContentBody .footable.breakpoint > tbody > tr > th > span.footable-toggle {
+  display: inline-block;
+  font-family: FontAwesome;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  padding-right: 5px;
+  font-size: 14px;
+  color: #888;
+}
+.page-content .footable.breakpoint > tbody > tr > td > span.footable-toggle:before,
+.page-content .footable.breakpoint > tbody > tr > th > span.footable-toggle:before,
+.entry-content .footable.breakpoint > tbody > tr > td > span.footable-toggle:before,
+.entry-content .footable.breakpoint > tbody > tr > th > span.footable-toggle:before,
+.entry-summary .footable.breakpoint > tbody > tr > td > span.footable-toggle:before,
+.entry-summary .footable.breakpoint > tbody > tr > th > span.footable-toggle:before,
+.mceContentBody .footable.breakpoint > tbody > tr > td > span.footable-toggle:before,
+.mceContentBody .footable.breakpoint > tbody > tr > th > span.footable-toggle:before {
+  content: "\f0fe";
+}
+.page-content .footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before,
+.page-content .footable.breakpoint > tbody > tr.footable-detail-show > th > span.footable-toggle:before,
+.entry-content .footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before,
+.entry-content .footable.breakpoint > tbody > tr.footable-detail-show > th > span.footable-toggle:before,
+.entry-summary .footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before,
+.entry-summary .footable.breakpoint > tbody > tr.footable-detail-show > th > span.footable-toggle:before,
+.mceContentBody .footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before,
+.mceContentBody .footable.breakpoint > tbody > tr.footable-detail-show > th > span.footable-toggle:before {
+  content: "\f146";
 }
 
 /*--------------------------------------------------------------

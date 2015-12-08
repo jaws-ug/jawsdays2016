@@ -4,6 +4,15 @@
 .mceContentBody {
 	word-wrap: break-word;
 
+	a {
+		color: #336699;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__link-hover;
+		}
+	}
+
 	h1, h2, h3, h4, h5, h6, p {
 		margin-top: 0;
 	}
@@ -37,4 +46,41 @@
 		}
 	}
 	
+	// time table
+	table.timetable {
+		@include font-size(14);
+		thead th {
+			background: #424346;
+			color: white;
+			a {
+				color: $color__link-hover;
+				text-decoration: underline;
+			}
+		}
+		td a {
+			@include font-size(12);
+		}
+	}
+	.footable.breakpoint>tbody>tr>td>span.footable-toggle,
+	.footable.breakpoint>tbody>tr>th>span.footable-toggle {
+		display: inline-block;
+		font-family: FontAwesome;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		-webkit-font-smoothing: antialiased;
+		padding-right: 5px;
+		font-size: 14px;
+		color: #888;
+	}
+	.footable.breakpoint>tbody>tr>td>span.footable-toggle:before,
+	.footable.breakpoint>tbody>tr>th>span.footable-toggle:before {
+		content: "\f0fe";
+	}
+	.footable.breakpoint>tbody>tr.footable-detail-show>td>span.footable-toggle:before,
+	.footable.breakpoint>tbody>tr.footable-detail-show>th>span.footable-toggle:before {
+		content: "\f146";
+	}
 }
