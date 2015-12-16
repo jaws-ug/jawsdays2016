@@ -893,7 +893,7 @@ a:hover, a:active {
 
 body.home .site-content {
   padding: 0;
-  background: #020610 url('images/background.png?1448856076') repeat-x center bottom;
+  background: #020610 url('images/background.png?1450270464') repeat-x center bottom;
 }
 body.home .main-image {
   text-align: center;
@@ -942,7 +942,7 @@ body.home .main-image {
   display: block;
   width: 187px;
   padding-top: 49px;
-  background: transparent url('images/site-logo@2x.png?1448358881') no-repeat center top;
+  background: transparent url('images/site-logo@2x.png?1450270464') no-repeat center top;
   background-size: 187px 49px;
 }
 
@@ -1269,17 +1269,12 @@ p.copyright {
   font-size: 0.875rem;
 }
 .entry-profile p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
-
-.entry-sns {
-  margin-top: 10px;
-  font-size: 24px;
-  font-size: 1.5rem;
-}
-.entry-sns a {
-  display: inline-block;
-  margin-right: 10px;
+.entry-profile ul, .entry-profile ol {
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 .entry-content {
@@ -1308,6 +1303,7 @@ p.copyright {
   padding: 0.25em 2em;
 }
 .entry-summary .entry-more a:hover, .entry-summary .entry-more a:active, .entry-summary .entry-more a:focus {
+  color: white;
   background: #ff9c08;
   text-decoration: none;
 }
@@ -1394,7 +1390,7 @@ p.copyright {
 .entry-content h2,
 .entry-summary h2,
 .mceContentBody h2 {
-  background-image: url('images/title-back.gif?1448358881');
+  background-image: url('images/title-back.gif?1450270464');
   padding: 5px;
 }
 .page-content h3,

@@ -34,28 +34,7 @@
 
 			// 自己紹介
 			if ( get_field( 'profile' ) ) {
-				echo '<p>' . __( 'Profile:', 'jawsdays' );
 				the_field( 'profile' );
-				echo '</p>' . "\n";
-			}
-		?>
-		</div>
-		<?php endif; ?>
-
-		<?php if ( get_field( 'web' ) || get_field( 'twitter' ) || get_field( 'facebook' ) ) : ?>
-		<div class="entry-sns">
-		<?php
-			// Web
-			if ( get_field( 'web' ) ) {
-				echo '<a href="' . esc_url( get_field( 'web' ) ) . '" target="_blank"><i class="fa fa-globe"></i></a>';
-			}
-			// Twitter
-			if ( get_field( 'twitter' ) ) {
-				echo '<a href="' . esc_url( 'https://twitter.com/' . get_field( 'twitter' ) ) . '" target="_blank"><i class="fa fa-twitter"></i></a>';
-			}
-			// Facebook
-			if ( get_field( 'facebook' ) ) {
-				echo '<a href="' . esc_url( get_field( 'facebook' ) ) . '" target="_blank"><i class="fa fa-facebook-official"></i></a>';
 			}
 		?>
 		</div>
@@ -93,9 +72,7 @@
 			// 主な聴講者
 			if ( get_field( 'target' ) ) {
 				echo '<h3>' . __( 'Target', 'jawsdays' ) . '</h3>' . "\n";
-				echo '<p>';
 				the_field( 'target' );
-				echo '</p>' . "\n";
 			}
 
 			// スライド資料

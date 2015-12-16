@@ -67,13 +67,13 @@ add_action( 'loop_start', 'jptweak_remove_share' );
 
 add_filter( 'wpas_default_suffix', 'jawsdays_wpas_default_suffix' );
 function jawsdays_wpas_default_suffix( $suffix ) {
-	$suffix = $suffix . " #jawsdays";
+	$suffix = $suffix . " #jawsdays #jawsug";
 	return $suffix;
 }
 
 add_action( 'publicize_save_meta', 'jawsdays_publicize_save_meta', 10, 4);
 function jawsdays_publicize_save_meta( $submit_post, $post_id, $service_name, $connection ) {
-	$suffix = " #jawsdays";
+	$suffix = " #jawsdays #jawsug";
 	$title  = get_the_title( $post_id );
 	$link   = wp_get_shortlink( $post_id );
 	$publicize_custom_message = get_post_meta( $post_id, '_wpas_mess', true );
