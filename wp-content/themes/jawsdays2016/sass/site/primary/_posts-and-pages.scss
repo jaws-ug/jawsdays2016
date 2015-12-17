@@ -95,6 +95,14 @@
 		margin-bottom: 0.5em;
 	}
 }
+.entry-sns {
+	margin-top: 10px;
+	@include font-size(24);
+	a {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
 
 .page-content,
 .entry-content,

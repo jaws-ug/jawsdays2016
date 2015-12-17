@@ -22,6 +22,25 @@
 		<?php do_action( 'jawsdays_before_entry_header' ); ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
+		<?php if ( get_field( 'twitter' ) || get_field( 'facebook' ) || get_field( 'github' ) ) : ?>
+		<div class="entry-sns">
+		<?php
+			// Twitter
+			if ( get_field( 'twitter' ) ) {
+				echo '<a href="' . esc_url( 'https://twitter.com/' . get_field( 'twitter' ) ) . '" target="_blank"><i class="fa fa-twitter"></i></a>';
+			}
+			// Facebook
+			if ( get_field( 'facebook' ) ) {
+				echo '<a href="' . esc_url( 'https://www.facebook.com/' . get_field( 'facebook' ) ) . '" target="_blank"><i class="fa fa-facebook-official"></i></a>';
+			}
+			// GitHub
+			if ( get_field( 'github' ) ) {
+				echo '<a href="' . 'https://github.com/' . esc_url( get_field( 'github' ) ) . '" target="_blank"><i class="fa fa-github"></i></a>';
+			}
+		?>
+		</div>
+		<?php endif; ?>
+
 		<?php if ( get_field( 'group' ) || get_field( 'profile' ) ) : ?>
 		<div class="entry-profile">
 		<?php
