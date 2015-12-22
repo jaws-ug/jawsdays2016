@@ -551,52 +551,11 @@ a:hover, a:active {
   color: #ff9c08;
   text-decoration: underline;
 }
-.page-content table.timetable td a,
-.entry-content table.timetable td a,
-.entry-summary table.timetable td a,
-.mceContentBody table.timetable td a {
-  font-size: 12px;
-  font-size: 0.75rem;
-}
-.page-content .footable.breakpoint > tbody > tr > td > span.footable-toggle,
-.page-content .footable.breakpoint > tbody > tr > th > span.footable-toggle,
-.entry-content .footable.breakpoint > tbody > tr > td > span.footable-toggle,
-.entry-content .footable.breakpoint > tbody > tr > th > span.footable-toggle,
-.entry-summary .footable.breakpoint > tbody > tr > td > span.footable-toggle,
-.entry-summary .footable.breakpoint > tbody > tr > th > span.footable-toggle,
-.mceContentBody .footable.breakpoint > tbody > tr > td > span.footable-toggle,
-.mceContentBody .footable.breakpoint > tbody > tr > th > span.footable-toggle {
-  display: inline-block;
-  font-family: FontAwesome;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  padding-right: 5px;
-  font-size: 14px;
-  color: #888;
-}
-.page-content .footable.breakpoint > tbody > tr > td > span.footable-toggle:before,
-.page-content .footable.breakpoint > tbody > tr > th > span.footable-toggle:before,
-.entry-content .footable.breakpoint > tbody > tr > td > span.footable-toggle:before,
-.entry-content .footable.breakpoint > tbody > tr > th > span.footable-toggle:before,
-.entry-summary .footable.breakpoint > tbody > tr > td > span.footable-toggle:before,
-.entry-summary .footable.breakpoint > tbody > tr > th > span.footable-toggle:before,
-.mceContentBody .footable.breakpoint > tbody > tr > td > span.footable-toggle:before,
-.mceContentBody .footable.breakpoint > tbody > tr > th > span.footable-toggle:before {
-  content: "\f0fe";
-}
-.page-content .footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before,
-.page-content .footable.breakpoint > tbody > tr.footable-detail-show > th > span.footable-toggle:before,
-.entry-content .footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before,
-.entry-content .footable.breakpoint > tbody > tr.footable-detail-show > th > span.footable-toggle:before,
-.entry-summary .footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before,
-.entry-summary .footable.breakpoint > tbody > tr.footable-detail-show > th > span.footable-toggle:before,
-.mceContentBody .footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before,
-.mceContentBody .footable.breakpoint > tbody > tr.footable-detail-show > th > span.footable-toggle:before {
-  content: "\f146";
+.page-content table.timetable .long-cell td,
+.entry-content table.timetable .long-cell td,
+.entry-summary table.timetable .long-cell td,
+.mceContentBody table.timetable .long-cell td {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------

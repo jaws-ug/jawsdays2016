@@ -189,7 +189,7 @@ function jawsdays_scripts() {
 	);
 	wp_enqueue_style(
 		'FooTable',
-		get_template_directory_uri() . '/footable/css/footable.core.min.css',
+		get_template_directory_uri() . '/footable/css/footable.core.css',
 		array(),
 		'2.0.3'
 	);

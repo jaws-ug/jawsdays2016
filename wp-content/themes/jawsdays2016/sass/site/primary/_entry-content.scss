@@ -57,30 +57,9 @@
 				text-decoration: underline;
 			}
 		}
-		td a {
-			@include font-size(12);
+		.long-cell td {
+			text-align: center;
 		}
 	}
-	.footable.breakpoint>tbody>tr>td>span.footable-toggle,
-	.footable.breakpoint>tbody>tr>th>span.footable-toggle {
-		display: inline-block;
-		font-family: FontAwesome;
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		-webkit-font-smoothing: antialiased;
-		padding-right: 5px;
-		font-size: 14px;
-		color: #888;
-	}
-	.footable.breakpoint>tbody>tr>td>span.footable-toggle:before,
-	.footable.breakpoint>tbody>tr>th>span.footable-toggle:before {
-		content: "\f0fe";
-	}
-	.footable.breakpoint>tbody>tr.footable-detail-show>td>span.footable-toggle:before,
-	.footable.breakpoint>tbody>tr.footable-detail-show>th>span.footable-toggle:before {
-		content: "\f146";
-	}
+
 }
