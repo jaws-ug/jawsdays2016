@@ -534,8 +534,18 @@ a:hover, a:active {
 .entry-content table.timetable,
 .entry-summary table.timetable,
 .mceContentBody table.timetable {
+  background: white;
   font-size: 14px;
   font-size: 0.875rem;
+}
+@media screen and (min-width: 601px) {
+  .page-content table.timetable,
+  .entry-content table.timetable,
+  .entry-summary table.timetable,
+  .mceContentBody table.timetable {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
 }
 .page-content table.timetable thead th,
 .entry-content table.timetable thead th,
@@ -556,6 +566,32 @@ a:hover, a:active {
 .entry-summary table.timetable .long-cell td,
 .mceContentBody table.timetable .long-cell td {
   text-align: center;
+}
+.page-content table.timetable th > p,
+.page-content table.timetable td > p,
+.entry-content table.timetable th > p,
+.entry-content table.timetable td > p,
+.entry-summary table.timetable th > p,
+.entry-summary table.timetable td > p,
+.mceContentBody table.timetable th > p,
+.mceContentBody table.timetable td > p {
+  margin-bottom: 0.5em;
+}
+.page-content table.timetable th > p::last-child,
+.page-content table.timetable td > p::last-child,
+.entry-content table.timetable th > p::last-child,
+.entry-content table.timetable td > p::last-child,
+.entry-summary table.timetable th > p::last-child,
+.entry-summary table.timetable td > p::last-child,
+.mceContentBody table.timetable th > p::last-child,
+.mceContentBody table.timetable td > p::last-child {
+  margin-bottom: 0;
+}
+.page-content table.timetable .footable-row-detail-name,
+.entry-content table.timetable .footable-row-detail-name,
+.entry-summary table.timetable .footable-row-detail-name,
+.mceContentBody table.timetable .footable-row-detail-name {
+  width: 50%;
 }
 
 /*--------------------------------------------------------------

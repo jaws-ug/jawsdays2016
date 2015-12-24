@@ -446,6 +446,7 @@ input[type="submit"]:focus {
 input[type="text"],
 input[type="email"],
 input[type="url"],
+input[type="tel"],
 input[type="password"],
 input[type="search"],
 textarea {
@@ -456,6 +457,7 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
+input[type="tel"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
@@ -465,6 +467,7 @@ textarea:focus {
 input[type="text"],
 input[type="email"],
 input[type="url"],
+input[type="tel"],
 input[type="password"],
 input[type="search"] {
   padding: 3px;
@@ -1456,8 +1459,18 @@ p.copyright {
 .entry-content table.timetable,
 .entry-summary table.timetable,
 .mceContentBody table.timetable {
+  background: white;
   font-size: 14px;
   font-size: 0.875rem;
+}
+@media screen and (min-width: 601px) {
+  .page-content table.timetable,
+  .entry-content table.timetable,
+  .entry-summary table.timetable,
+  .mceContentBody table.timetable {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
 }
 .page-content table.timetable thead th,
 .entry-content table.timetable thead th,
@@ -1478,6 +1491,32 @@ p.copyright {
 .entry-summary table.timetable .long-cell td,
 .mceContentBody table.timetable .long-cell td {
   text-align: center;
+}
+.page-content table.timetable th > p,
+.page-content table.timetable td > p,
+.entry-content table.timetable th > p,
+.entry-content table.timetable td > p,
+.entry-summary table.timetable th > p,
+.entry-summary table.timetable td > p,
+.mceContentBody table.timetable th > p,
+.mceContentBody table.timetable td > p {
+  margin-bottom: 0.5em;
+}
+.page-content table.timetable th > p::last-child,
+.page-content table.timetable td > p::last-child,
+.entry-content table.timetable th > p::last-child,
+.entry-content table.timetable td > p::last-child,
+.entry-summary table.timetable th > p::last-child,
+.entry-summary table.timetable td > p::last-child,
+.mceContentBody table.timetable th > p::last-child,
+.mceContentBody table.timetable td > p::last-child {
+  margin-bottom: 0;
+}
+.page-content table.timetable .footable-row-detail-name,
+.entry-content table.timetable .footable-row-detail-name,
+.entry-summary table.timetable .footable-row-detail-name,
+.mceContentBody table.timetable .footable-row-detail-name {
+  width: 50%;
 }
 
 /*--------------------------------------------------------------

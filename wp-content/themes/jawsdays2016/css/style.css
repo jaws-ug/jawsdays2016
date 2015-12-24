@@ -517,6 +517,7 @@ input[type="submit"]:focus {
 input[type="text"],
 input[type="email"],
 input[type="url"],
+input[type="tel"],
 input[type="password"],
 input[type="search"],
 textarea {
@@ -524,26 +525,28 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-/* line 11, ../sass/forms/_fields.scss */
+/* line 12, ../sass/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
+input[type="tel"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
   color: #111;
 }
 
-/* line 16, ../sass/forms/_fields.scss */
+/* line 17, ../sass/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
+input[type="tel"],
 input[type="password"],
 input[type="search"] {
   padding: 3px;
 }
 
-/* line 24, ../sass/forms/_fields.scss */
+/* line 26, ../sass/forms/_fields.scss */
 textarea {
   padding-left: 3px;
   width: 100%;
@@ -1686,10 +1689,21 @@ p.copyright {
 .entry-content table.timetable,
 .entry-summary table.timetable,
 .mceContentBody table.timetable {
+  background: white;
   font-size: 14px;
   font-size: 0.875rem;
 }
-/* line 52, ../sass/site/primary/_entry-content.scss */
+@media screen and (min-width: 601px) {
+  /* line 50, ../sass/site/primary/_entry-content.scss */
+  .page-content table.timetable,
+  .entry-content table.timetable,
+  .entry-summary table.timetable,
+  .mceContentBody table.timetable {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+/* line 57, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable thead th,
 .entry-content table.timetable thead th,
 .entry-summary table.timetable thead th,
@@ -1697,7 +1711,7 @@ p.copyright {
   background: #424346;
   color: white;
 }
-/* line 55, ../sass/site/primary/_entry-content.scss */
+/* line 60, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable thead th a,
 .entry-content table.timetable thead th a,
 .entry-summary table.timetable thead th a,
@@ -1705,12 +1719,41 @@ p.copyright {
   color: #ff9c08;
   text-decoration: underline;
 }
-/* line 60, ../sass/site/primary/_entry-content.scss */
+/* line 65, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable .long-cell td,
 .entry-content table.timetable .long-cell td,
 .entry-summary table.timetable .long-cell td,
 .mceContentBody table.timetable .long-cell td {
   text-align: center;
+}
+/* line 68, ../sass/site/primary/_entry-content.scss */
+.page-content table.timetable th > p,
+.page-content table.timetable td > p,
+.entry-content table.timetable th > p,
+.entry-content table.timetable td > p,
+.entry-summary table.timetable th > p,
+.entry-summary table.timetable td > p,
+.mceContentBody table.timetable th > p,
+.mceContentBody table.timetable td > p {
+  margin-bottom: 0.5em;
+}
+/* line 71, ../sass/site/primary/_entry-content.scss */
+.page-content table.timetable th > p::last-child,
+.page-content table.timetable td > p::last-child,
+.entry-content table.timetable th > p::last-child,
+.entry-content table.timetable td > p::last-child,
+.entry-summary table.timetable th > p::last-child,
+.entry-summary table.timetable td > p::last-child,
+.mceContentBody table.timetable th > p::last-child,
+.mceContentBody table.timetable td > p::last-child {
+  margin-bottom: 0;
+}
+/* line 76, ../sass/site/primary/_entry-content.scss */
+.page-content table.timetable .footable-row-detail-name,
+.entry-content table.timetable .footable-row-detail-name,
+.entry-summary table.timetable .footable-row-detail-name,
+.mceContentBody table.timetable .footable-row-detail-name {
+  width: 50%;
 }
 
 /*--------------------------------------------------------------

@@ -337,7 +337,7 @@ public function jaws_acf() {
 					'type' => 'radio',
 					'required' => 1,
 					'choices' => array (
-						'ビッグトラック' => 'ビッグトラック',
+						'センタートラック' => 'センタートラック',
 						'AWS Technical Deep Dive' => 'AWS Technical Deep Dive',
 						'ユーザートラック' => 'ユーザートラック',
 						'The Next Cloud' => 'The Next Cloud',
