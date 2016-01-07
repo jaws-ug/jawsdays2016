@@ -35,7 +35,7 @@
 			}
 			// GitHub
 			if ( get_field( 'github' ) ) {
-				echo '<a href="' . 'https://github.com/' . esc_url( get_field( 'github' ) ) . '" target="_blank"><i class="fa fa-github"></i></a>';
+				echo '<a href="' . 'https://github.com/' . get_field( 'github' ) . '" target="_blank"><i class="fa fa-github"></i></a>';
 			}
 		?>
 		</div>
