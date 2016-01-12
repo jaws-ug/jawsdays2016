@@ -134,8 +134,8 @@ public function custom_post_type_supporter() {
 		'label'               => _x( 'Supporters', 'Post Type label', 'jawsdays2016' ),
 		'description'         => _x( 'Supporter', 'Post Type description', 'jawsdays2016' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'page-attributes', 'publicize', 'wpcom-markdown' ),
-		'hierarchical'        => true,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'publicize', 'wpcom-markdown' ),
+		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
@@ -159,13 +159,15 @@ public function custom_post_type_supporter() {
  * http://notnil-creative.com/blog/archives/1996
  */
 public function jaws_modify_main_query( $query ) {
-	if ( is_admin() || ! $query->is_main_query() ) {}
+
+	if ( is_admin() || ! $query->is_main_query() ) {
 		return;
+	}
 
 	if ( $query->is_post_type_archive( 'supporter' ) ) {
 		$query->set( 'posts_per_archive_page', -1 );
+		$query->set( 'orderby', 'date' );
 		$query->set( 'order', 'ASC' );
-		$query->set( 'orderby', 'menu_order date' );
 		return;
 	}
 

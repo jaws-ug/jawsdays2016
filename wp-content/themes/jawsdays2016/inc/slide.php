@@ -11,7 +11,7 @@ function supporter_slide() {
 		'post_type'      => 'supporter',
 		'posts_per_page' => -1,
 		'order'          => 'ASC',
-		'orderby'        => 'menu_order date',
+		'orderby'        => 'date',
 	);
 	$the_query = new WP_Query( $args );
 	?>
