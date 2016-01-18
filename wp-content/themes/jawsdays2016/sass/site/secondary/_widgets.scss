@@ -53,10 +53,9 @@
 .footer-widgets-area {
 	@extend %inner;
 	@include mqPC {
+		@include display-flex();
 		.widget {
 			width: 300px;
-			display: inline-block;
-			vertical-align: top;
 			
 			&:nth-child(2) {
 				margin-right: 50px;
