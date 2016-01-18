@@ -346,6 +346,7 @@ public function jaws_acf() {
 						'Workshop' => 'Workshop',
 						'HackDay' => 'HackDay',
 						'JAWS-UG出張勉強会' => 'JAWS-UG出張勉強会',
+						'LT' => 'LT',
 					),
 					'other_choice' => 0,
 					'save_other_choice' => 0,
